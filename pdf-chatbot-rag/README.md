@@ -20,6 +20,8 @@ The application allows users to upload one or multiple PDF documents and ask que
 * Maintain chat history during the session
 * Display source pages used to generate answers
 
+![1781855242467](image/README/1781855242467.png)
+
 ---
 
 ## Architecture

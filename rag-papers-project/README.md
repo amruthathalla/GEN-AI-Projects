@@ -16,11 +16,14 @@ I wanted to understand RAG by building one, not just reading about it. Using the
 6. **Generate**: Retrieved chunks + the question are passed to an LLM (Llama 3.1 8B via Groq's free API), explicitly instructed to answer only from the provided context and to admit when it can't.
 7. **Interface**: A Streamlit app exposes this as a simple Q&A tool with source attribution.
 
+![1781855142303](image/README/1781855142303.png)
+
 ## Design decisions and tradeoffs
 
 - **Chunk size (500 words, 50 overlap)**: balances having enough context per chunk against retrieval precision. Smaller chunks risk losing context; larger chunks risk diluting relevance.
 - **Retrieving top 4 chunks**: a tradeoff between giving the LLM enough evidence and avoiding noisy, irrelevant context.
 - **Explicit "don't guess" instruction**: reduces hallucination by constraining the model to the retrieved evidence, and tested this directly with out-of-scope questions.
+
 
 ## What I'd improve with more time
 
@@ -33,7 +36,6 @@ I wanted to understand RAG by building one, not just reading about it. Using the
 Python, sentence-transformers, ChromaDB, Groq API (Llama 3.1), Streamlit
 
 ## Papers used
-
 
 * [https://arxiv.org/pdf/2005.11401](https://arxiv.org/pdf/2005.11401) — Lewis et al., original RAG paper
 * [https://arxiv.org/pdf/2007.01282](https://arxiv.org/pdf/2007.01282) — Izacard & Grave, Fusion-in-Decoder
