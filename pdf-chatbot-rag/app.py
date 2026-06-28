@@ -7,7 +7,12 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
 from langchain_groq import ChatGroq
+from langchain_groq import ChatGroq
 
+llm = ChatGroq(
+    groq_api_key="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", 
+    model_name="mixtral-8x7b-32768"  # or your preferred model
+)
 # -----------------------
 # TITLE
 # -----------------------
@@ -139,8 +144,8 @@ if uploaded_files:
         # -----------------------
 
         llm = ChatGroq(
-            model="llama-3.3-70b-versatile",
-            api_key=groq_key
+             groq_api_key="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", 
+                model_name="llama-3.3-70b-versatile"
         )
 
         # -----------------------
