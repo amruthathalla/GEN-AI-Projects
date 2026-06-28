@@ -1,21 +1,22 @@
 # Hi, I'm Amrutha Varshini Thalla
 
-I build with Generative AI — specifically, systems where a language model's output is grounded in retrieved knowledge or shaped through fine-tuning, rather than left to the model's own defaults. I'm interested in retrieval and information access in particular: how a model decides what knowledge to rely on, and how that decision shapes everything it produces afterward. My background is in Information Science (M.S., Indiana Institute of Technology, USA, May 2025), which gave me an entry point into this through the field's older questions — how knowledge is organized, indexed, and made findable — rather than through model architecture first. That framing is still how I approach retrieval-augmented generation today.
+I build with Generative AI — retrieval-augmented generation, agentic systems, and parameter-efficient fine-tuning. My background is in Information Systems (M.S., Indiana Institute of Technology), which gave me an entry point into NLP through the field's older questions — how knowledge is organized, retrieved, and made findable — rather than through model architecture first.
 
-I learn GenAI by building it end-to-end: chunking and embedding strategies, vector retrieval, prompting for grounded generation, and parameter-efficient fine-tuning.
+I learn by building, comparing, and reporting what actually happened — several of my projects deliberately implement the same task two ways (two agent frameworks, two QA mechanisms) specifically to surface real differences rather than assume one approach represents a whole technique.
 
-## GenAI projects
+## GenAI & Agentic AI Projects
 
-- **RAG over RAG research papers** — a retrieval-augmented Q&A system grounded in six foundational RAG papers themselves, with source citations and an explicit instruction to admit uncertainty rather than guess. Covers the full pipeline: chunking, embedding (`sentence-transformers`), vector storage (ChromaDB), retrieval, and grounded generation (Llama 3.1 via Groq).
-- **PDF chatbot (RAG)** — the same retrieval pipeline generalized to arbitrary, user-uploaded PDFs, for a more realistic, open-ended input setting.
-- **LoRA fine-tuning** — adapted a small open-source LLM to follow a fixed answer format using LoRA, training roughly 0.4% of its parameters, with a genuine before/after evaluation including unseen questions.
+- **RAG over RAG research papers** — a retrieval-augmented Q&A system grounded in six foundational RAG papers, with source citations and explicit uncertainty flagging.
+- **Multi-agent system: CrewAI vs. phidata** — the same research-and-summarize task in two agent frameworks, compared side by side in a Streamlit app.
+- **LangChain agent over a Pandas DataFrame** — an agent that reasons about which Pandas operations to run for multi-step data questions.
+- **LoRA fine-tuning** — adapted a small LLM to a fixed answer format, training ~0.36% of its parameters.
+- **Extractive vs. generative QA** — a controlled comparison showing extractive QA's confidence score doesn't reliably predict correctness.
+- **RAG chatbot for user-uploaded PDFs**, **Stable Diffusion prompt-engineering comparison**, and a **classical (non-LLM) text classifier** as a deliberate contrast.
 
-Full write-ups, design decisions, and tradeoffs for each are in [GEN-AI-Projects](https://github.com/amruthathalla/GEN-AI-Projects), where more GenAI projects will continue to be added.
-
-*I've also worked on a classical (non-LLM) ML text classifier as a point of comparison — included in the same repo, but the focus going forward is GenAI.*
+Full write-ups, design decisions, and honestly-reported limitations for each are in [GEN-AI-Projects](https://github.com/amruthathalla/GEN-AI-Projects).
 
 ## Find me
 
-- LinkedIn:  www.linkedin.com/in/amrutha-varshini-thalla
-- Email:  thallaamrutha5@gmail.com
-- Portfolio:  https://amruthathallaportfolio.netlify.app/
+- LinkedIn: [linkedin.com/in/amrutha-varshini-thalla](https://www.linkedin.com/in/amrutha-varshini-thalla/)
+- Portfolio: [amruthathallaportfolio.netlify.app](https://amruthathallaportfolio.netlify.app)
+- Email: thallaamrutha5@gmail.com
